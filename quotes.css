@@ -5,7 +5,8 @@ body {
 section.quotes {
   background-color: white;
   padding: 1rem 3rem;
-  width: 100%;
+  width: 800px;
+  margin: 0 auto;
 }
 
 section.quotes p {
@@ -16,13 +17,12 @@ section.quotes p i {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (max-width: 820px) {
   body {
-    background-color: #668099;
+    background-color: white;
   }
   
   section { 
-    wwidth: 800px;
-    margin: 0 auto;
+    wwidth: 100%;
   }
 }
