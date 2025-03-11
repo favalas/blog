@@ -1,8 +1,11 @@
 section.quotes {
-  padding: 5%;
+  padding: 1rem 2rem;
 }
 
 section.quotes p {
   line-height: 1.5;
-  font-size: 2rem;
+}
+
+section.quotes p i {
+  font-size: 1.5rem;
 }
