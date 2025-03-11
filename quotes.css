@@ -1,9 +1,12 @@
  section { 
    width: 800px;
+   margin: 0 auto;
  }
 
 section.quotes {
   padding: 1rem 3rem;
+  width: 800px;
+  margin: 0 auto;
 }
 
 section.quotes p {
@@ -15,5 +18,8 @@ section.quotes p i {
 }
 
 @media screen (max-width: 768px) {
-  section { width: 100% }
+  section { 
+    width: 100%;
+    padding: 0 0;
+  }
 }
