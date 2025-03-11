@@ -3,6 +3,7 @@ body {
 }
 
 section.quotes {
+  background-color: white;
   padding: 1rem 3rem;
   width: 800px;
   margin: 0 auto;
