@@ -2,6 +2,10 @@ body {
   background-color: #668099;
 }
 
+section h1 {
+  color: #668099;
+}
+
 section.quotes {
   background-color: white;
   padding: 1rem 3rem;
