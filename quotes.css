@@ -17,9 +17,9 @@ section.quotes p i {
   font-size: 1.2rem;
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
   section { 
     width: 100%;
-    padding: 0 0;
+    margin: 0 0;
   }
 }
