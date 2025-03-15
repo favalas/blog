@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteRule ^blog/quotes/$ quotes.html
-RewriteRule ^blog/shelf/$ myshelf.html
-RewriteRule . /index.html [L]
+RewriteRule ^quotes/$ quotes.html
+RewriteRule ^shelf/$ myshelf.html
+RewriteRule . index.html [L]
 </IfModule>
