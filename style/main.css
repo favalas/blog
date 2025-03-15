@@ -24,6 +24,16 @@ section.main p i {
   font-size: 1.2rem;
 }
 
+section ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+section li {
+  font-size: 1.3em;
+}
+
 @media screen and (max-width: 820px) {
   body {
     background-color: white;
