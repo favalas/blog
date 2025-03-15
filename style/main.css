@@ -27,7 +27,7 @@ section.main p i {
 section ol, section ul {
   display: flex;
   flex-direction: column;
-  gap: 1.3em;
+  gap: 1.3rem;
 }
 
 section ol li, section ul li {
