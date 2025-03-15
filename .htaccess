@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteRule ^quotes(/*)$ quotes.html
-RewriteRule ^shelf(/*)$ myshelf.html
+RewriteRule ^quotes/$ quotes.html
+RewriteRule ^shelf/$ myshelf.html
 </IfModule>
