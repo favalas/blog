@@ -2,4 +2,6 @@
 RewriteEngine on
 RewriteRule ^quotes/$ quotes.html
 RewriteRule ^shelf/$ myshelf.html
+Redirect  ^quotes$ quotes/
+Redirect ^shelf$ shelf/
 </IfModule>
