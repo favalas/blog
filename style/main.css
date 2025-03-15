@@ -7,20 +7,20 @@ section h1 {
   font-size: 1.8rem;
 }
 
-section.quotes {
+section.main {
   background-color: white;
   padding: 1rem 3rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-section.quotes p {
+section.main p {
   line-height: 1.2;
   padding-bottom: 0.7rem;
   border-bottom: 0.9px dotted;
 }
 
-section.quotes p i {
+section.main p i {
   font-size: 1.2rem;
 }
 
