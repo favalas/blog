@@ -2,6 +2,10 @@ body {
   background-color: #668099;
 }
 
+a {
+  text-decoration: none;
+}
+
 section h1 {
   color: #668099;
   font-size: 1.8rem;
