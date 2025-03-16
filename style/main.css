@@ -30,8 +30,8 @@ section.main p i {
   font-size: 1.2rem;
 }
 
-section.main footer span.totalCounterParagraphs::before {
-  content: "Total: " counter(paragraphs) ". ";
+section.main footer span.totalCounterParagraphs::after {
+  content: counter(paragraphs);
 }
 
 section ol, section ul {
