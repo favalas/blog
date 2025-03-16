@@ -16,16 +16,22 @@ section.main {
   padding: 1rem 2rem;
   max-width: 800px;
   margin: 0 auto;
+  counter-reset: paragraphs;
 }
 
 section.main p {
   line-height: 1.2;
   padding-bottom: 0.7rem;
   border-bottom: 0.9px dotted;
+  counter-increment: paragraphs;
 }
 
 section.main p i {
   font-size: 1.2rem;
+}
+
+section.main footer span.totalCounterParagraphs::before {
+  content: "Total: " counter(paragraphs) ". ";
 }
 
 section ol, section ul {
