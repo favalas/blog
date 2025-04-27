@@ -2,4 +2,5 @@
 RewriteEngine on
 RewriteRule ^quotes/$ quotes.html
 RewriteRule ^shelf/$ myshelf.html
+RewriteRule ^notes/$ notesfromtheunderground.html
 </IfModule>
