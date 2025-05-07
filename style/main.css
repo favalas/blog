@@ -30,6 +30,10 @@ section.main p i {
   font-size: 1.2rem;
 }
 
+section.main p a::before {
+  content: " - ";
+}
+
 section.main footer span.totalCounterParagraphs {
   font-style: italic;
   font-size: 0.8rem;
