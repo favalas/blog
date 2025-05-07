@@ -30,8 +30,8 @@ section.main p i {
   font-size: 1.2rem;
 }
 
-section.main p a::before {
-  content: " - ";
+section.main p a {
+  font-size: small;
 }
 
 section.main footer span.totalCounterParagraphs {
