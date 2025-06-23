@@ -59,7 +59,8 @@ section ol li, section ul li {
 }
 
 .imageContext img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 600px;
 }
 
 @media screen and (max-width: 820px) {
