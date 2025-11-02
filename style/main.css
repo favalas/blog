@@ -63,6 +63,16 @@ section ol li, section ul li {
   max-height: 600px;
 }
 
+.videoContext {
+  width: 70%;
+  margin: 5% auto;
+}
+
+.videoContext video {
+  width: 100%;
+  max-height: 600px;
+}
+
 div.pagination {
   margin-top: 10px;
 }
