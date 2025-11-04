@@ -73,6 +73,15 @@ section ol li, section ul li {
   max-height: 600px;
 }
 
+.audioContext {
+  width: 70%;
+  margin: 5% auto;
+}
+
+.audioContext audio {
+  width: 100%;
+}
+
 div.pagination {
   margin-top: 10px;
 }
