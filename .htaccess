@@ -4,4 +4,5 @@ RewriteRule ^quotes/$ quotes.html
 RewriteRule ^notes/1/$ notesfromtheundergroundp1.html
 RewriteRule ^notes/2/$ notesfromtheundergroundp2.html
 RewriteRule ^notes/3/$ notesfromtheundergroundp3.html
+RewriteRule ^notes/4/$ notesfromtheundergroundp4.html
 </IfModule>
