@@ -84,6 +84,7 @@ section ol li, section ul li {
 
 div.pagination {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 div.pagination .separator {
