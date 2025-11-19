@@ -90,7 +90,7 @@ div.pagination .separator {
   padding: 5px;
 }
 
-button.bottomButton {
+button.bottomButton, button.topButton {
     background-color: white;
     border-radius: 5px;
     font-family: monospace;
