@@ -90,6 +90,15 @@ div.pagination .separator {
   padding: 5px;
 }
 
+button.bottomButton {
+    background-color: white;
+    border-radius: 5px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 820px) {
   body {
     background-color: white;
