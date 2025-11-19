@@ -9,9 +9,26 @@
     <title>Quotes</title>
     
     <link href="../style/main.css" rel="stylesheet">
+
+    <script type="text/javascript">
+       function JumpToEndOfPage()
+       { 
+         window.scrollTo(
+             { left: 0, top: document.body.scrollHeight || document.documentElement.scrollHeight, behavior: "smooth" }
+         );   
+       };
+
+      window.addEventListener("load", function(){       
+       document.getElementById("jumpToEndLink").click( function(e) {e.preventDefault(); JumpToEndOfPage(); return false; } );  
+      });
+    </script>
   </head>
 
   <body>
+    <div>
+      <a id="jumpToEndLink">End of Page</a>
+    </div>
+    
     <section class="main">
       <h1>Quotes</h1>
       <p><i>A man who procrastinates in his choosing will inevitably have his choice made for him by circumstance.</i> – Hunter S. Thompson</p>
