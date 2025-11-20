@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+ul#mainIndexList {
+  font-family: monospace;
+}
+
 section h1 {
   color: #668099;
   font-size: 1.8rem;
