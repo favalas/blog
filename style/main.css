@@ -6,6 +6,14 @@ a {
   text-decoration: none;
 }
 
+ul#mainIndexList ul {
+  list-style-type: circle;
+}
+
+ul#mainIndexList li {
+  border-bottom: dashed #868382;
+}
+
 ul#mainIndexList a {
   font-family: monospace;
   font-size: 1.2rem;
