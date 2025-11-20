@@ -6,12 +6,9 @@ a {
   text-decoration: none;
 }
 
-ul#mainIndexList ul li {
-  list-style-type: circle;
-}
-
 ul#mainIndexList li {
   border-bottom: dashed #868382;
+  list-style-type: circle;
 }
 
 ul#mainIndexList a {
