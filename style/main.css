@@ -12,6 +12,11 @@ ul#mainIndexList a {
   color: #868382;
 }
 
+ul#mainIndexList a:hover {
+  font-size: 1.3rem;
+  color: black;
+}
+
 section h1 {
   color: #668099;
   font-size: 1.8rem;
