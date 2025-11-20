@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 
-ul#mainIndexList ul {
+ul#mainIndexList ul li {
   list-style-type: circle;
 }
 
