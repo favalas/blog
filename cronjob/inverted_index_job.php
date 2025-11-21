@@ -22,6 +22,9 @@ foreach($files as $file) {
     $unique_body_terms = array_unique($body_terms);
 
     foreach($unique_body_terms as $term) {
+      if(empty($term))
+        continue;
+      
       if (!array_key_exists($term, $files_content_hashMap))
         $files_content_hashMap[$term] = array($file);
        else
