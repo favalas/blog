@@ -21,7 +21,14 @@
               .catch(error => console.error('Error loading JSON:', error));
 
       function searchKeyPress(event) {
-          console.log(`Physical key code: ${event.code}`);
+          if(inverted_index_json == null) {
+            console.error("Json data with inverted index was not loaded yet");
+            return;
+          }
+
+          if(event.code == "Enter") {
+            console.log(`Physical key code: ${event.code}`);
+          }
       };
       
     </script>
