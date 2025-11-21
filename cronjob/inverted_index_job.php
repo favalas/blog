@@ -23,7 +23,7 @@ foreach($files as $file) {
 
     foreach($unique_body_terms as $term) {
       if (!array_key_exists($term, $files_content_hashMap))
-        $files_content_hashMap[$term] = new array($file);
+        $files_content_hashMap[$term] = array($file);
        else
         array_push($files_content_hashMap[$term], $file);
     }
