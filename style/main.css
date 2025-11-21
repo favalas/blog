@@ -116,6 +116,10 @@ button.bottomButton, button.topButton {
     cursor: pointer;
 }
 
+div#search {
+    witdh: 100%;
+}
+
 @media screen and (max-width: 820px) {
   body {
     background-color: white;
