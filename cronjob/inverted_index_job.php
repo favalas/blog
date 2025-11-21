@@ -17,7 +17,11 @@ foreach($files as $file) {
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    $body_terms = explode(" ", $body_text);
+    try {
+      $body_terms = explode(" ", $body_text);
+    } (\Error $e) {
+      echo $e->getMessage();
+    }
 
     var_dump($body_terms);
   
