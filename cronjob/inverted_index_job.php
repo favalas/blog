@@ -10,16 +10,23 @@ $files = array("quotes.html",
                "notesfromtheundergroundp3.html",
                "notesfromtheundergroundp4.html");
 
-$total_files_content = "";
+$files_content_hashMap = [];
 
 foreach($files as $file) {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    $total_files_content .= " File: " . $file . " [CONTENT] " . $body_text . " [/CONTENT] ";
+    foreach(explode($body_text, " ") as $term) {
+      
+      if(array_key_exists($term, $files_content_hashMap)
+         $files_content_hashMap[$term] = 1;
+      else
+        $files_content_hashMap[$term]++;
+      
+    }
 }
 
-echo $total_files_content;
+var_dump($files_content_hashMap);
 
 ?>
