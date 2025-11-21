@@ -17,10 +17,8 @@ foreach($files as $file) {
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    foreach(explode($body_text, " ") as $term) {
+    foreach(explode(" ", $body_text) as $term) {
 
-      echo "ola :" . $term;
-      
       if(array_key_exists($term, $files_content_hashMap)
          $files_content_hashMap[$term] = 1;
       else
