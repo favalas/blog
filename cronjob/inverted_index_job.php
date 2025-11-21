@@ -22,13 +22,20 @@ foreach($files as $file) {
     $unique_body_terms = array_unique($body_terms);
 
     foreach($unique_body_terms as $term) {
-      if(empty($term))
+
+      $patterns = array();
+      $patterns[0] = '/\n/';
+      $patterns[1] = '/./';
+      $patterns[2] = '/;/';
+      $term_parsed = preg_replace($patterns, "", $term);
+      
+      if(empty($term_parsed))
         continue;
       
-      if (!array_key_exists($term, $files_content_hashMap))
-        $files_content_hashMap[$term] = array($file);
+      if (!array_key_exists($term_parsed, $files_content_hashMap))
+        $files_content_hashMap[$term_parsed] = array($file);
        else
-        array_push($files_content_hashMap[$term], $file);
+        array_push($files_content_hashMap[$term_parsed], $file);
     }
 }
 
