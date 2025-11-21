@@ -13,9 +13,13 @@ $files = array("quotes.html",
 $total_files_content = "";
 
 foreach($files as $file) {
+    try {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
-
-    echo "passei";
+}
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+  exit();
+}
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->$textContent;
 
