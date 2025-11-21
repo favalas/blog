@@ -13,16 +13,12 @@ $files = array("quotes.html",
 $total_files_content = "";
 
 foreach($files as $file) {
-    try {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
-}
-catch(\Error $e) {
-  echo 'Message: '  . $e->getMessage();
-  exit();
-}
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->$textContent;
 
+    echo "texto do body: " . $body_text;
+  
     $total_files_content .= $body_text;
 }
 
