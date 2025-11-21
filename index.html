@@ -34,7 +34,13 @@
             
             if(searchTerm in inverted_index_json)
               element.style.display = 'block';
-              element.innerText = inverted_index_json[searchTerm];
+
+              let htmlList = "";
+              for (const document of inverted_index_json[searchTerm]) {
+                htmlList += document + "<br/>";
+              }
+              
+              element.innerHtml = htmlList;
           }
       };
       
