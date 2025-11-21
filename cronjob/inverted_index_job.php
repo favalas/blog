@@ -19,11 +19,13 @@ foreach($files as $file) {
 
     $body_terms = explode(" ", $body_text);
 
-    foreach($body_terms as $term) {
+    $unique_body_terms = array_unique($body_terms);
+
+    foreach($unique_body_terms as $term) {
       if (!array_key_exists($term, $files_content_hashMap))
-        $files_content_hashMap[$term] = 1;
+        $files_content_hashMap[$term] = new array($file);
        else
-        $files_content_hashMap[$term]++;
+        array_push($files_content_hashMap[$term], $file);
     }
 }
 
