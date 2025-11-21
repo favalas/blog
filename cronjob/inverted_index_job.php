@@ -17,7 +17,7 @@ foreach($files as $file) {
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    $total_files_content .= $body_text . " ";
+    $total_files_content .= " File: " . $file . " [CONTENT] " . $body_text . " [/CONTENT] ";
 }
 
 echo $total_files_content;
