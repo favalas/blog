@@ -117,12 +117,12 @@ button.bottomButton, button.topButton {
 }
 
 div#search {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 div#search input {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border-radius: 12px;
     border: 1.5px solid lightgrey;
     outline: none;
