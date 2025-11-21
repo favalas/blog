@@ -24,7 +24,17 @@ foreach($files as $file) {
     foreach($unique_body_terms as $term) {
 
       $patterns = array();
-      array_push($patterns, '/\n/', '/\./', '/\;/', '/\,/', '/\:/', , '/\"/', , '/\(/', , '/\)/', , '/\[/', , '/\]/');
+      array_push($patterns, 
+                 '/\n/', 
+                 '/\./', 
+                 '/\;/', 
+                 '/\,/', 
+                 '/\:/', 
+                 '/\"/', 
+                 '/\(/', 
+                 '/\)/', 
+                 '/\[/', 
+                 '/\]/');
       $term_parsed = preg_replace($patterns, "", $term);
       
       if(empty($term_parsed))
