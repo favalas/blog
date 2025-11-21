@@ -29,7 +29,7 @@ foreach($files as $file) {
     }
 }
 
-$json_content = json_encode($files_content_hashMap);
+$json_content = json_encode($files_content_hashMap, JSON_PRETTY_PRINT);
 
 echo $json_content;
 
