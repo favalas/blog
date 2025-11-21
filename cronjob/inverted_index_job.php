@@ -41,8 +41,8 @@ foreach($files as $file) {
       
       if (!array_key_exists($term_parsed, $files_content_hashMap)) {
           $files_content_hashMap[$term_parsed] = array($file);
-      } else if (!array_value_exists($file, $files_content_hashMap[$term_parsed])) {
-        array_push($files_content_hashMap[$term_parsed], $file);
+      } else if (!in_array($file, $files_content_hashMap[$term_parsed])) {
+          array_push($files_content_hashMap[$term_parsed], $file);
       }
     }
 }
