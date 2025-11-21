@@ -40,7 +40,7 @@ foreach($files as $file) {
     }
 }
 
-$json_content = json_encode($files_content_hashMap, JSON_PRETTY_PRINT);
+$json_content = json_encode($files_content_hashMap);
 
 $filename = "inverted_index.json";
 
