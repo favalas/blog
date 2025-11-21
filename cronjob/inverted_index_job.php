@@ -20,10 +20,11 @@ foreach($files as $file) {
     $body_terms = explode(" ", $body_text);
 
     foreach($body_term as $term) {
-      if(!array_key_exists($term, $files_content_hashMap)
+      if(!array_key_exists($term, $files_content_hashMap) {
         $files_content_hashMap[$term] = 1;
-      else
+      } else {
         $files_content_hashMap[$term]++;
+      }
     }
 }
 
