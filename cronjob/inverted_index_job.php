@@ -19,14 +19,12 @@ foreach($files as $file) {
 
     $body_terms = explode(" ", $body_text);
 
-    var_dump($body_terms);
-  
-    /*foreach($body_term as $term) {
+    foreach($body_term as $term) {
       if(!array_key_exists($term, $files_content_hashMap)
-         $files_content_hashMap[$term] = 1;
+        $files_content_hashMap[$term] = 1;
       else
         $files_content_hashMap[$term]++;
-    }*/
+    }
 }
 
 var_dump($files_content_hashMap);
