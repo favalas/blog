@@ -116,6 +116,10 @@ button.bottomButton, button.topButton {
     cursor: pointer;
 }
 
+div#search {
+    margin-top: 20px;
+}
+
 div#search input {
     width: 100%;
     padding: 12px;
