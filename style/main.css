@@ -116,7 +116,7 @@ button.bottomButton, button.topButton {
     cursor: pointer;
 }
 
-div#search {
+div#search input {
     witdh: 100%;
 }
 
