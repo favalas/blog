@@ -34,7 +34,8 @@ foreach($files as $file) {
                  '/\(/', 
                  '/\)/', 
                  '/\[/', 
-                 '/\]/');
+                 '/\]/',
+                 '/\”/');
       $term_parsed = preg_replace($patterns, "", $term);
       
       if(empty($term_parsed))
