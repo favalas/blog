@@ -22,7 +22,7 @@ foreach($files as $file) {
     var_dump($body_terms);
   
     foreach($body_term as $term) {
-      if(array_key_exists($term, $files_content_hashMap)
+      if(!array_key_exists($term, $files_content_hashMap)
          $files_content_hashMap[$term] = 1;
       else
         $files_content_hashMap[$term]++;
