@@ -13,9 +13,9 @@ $files = array("quotes.html",
 $total_files_content = "";
 
 foreach($files as $file) {
-    echo $file_root . $file;
+    echo realpath($file_root . $file);
   
-    $dom = HTMLDocument::createFromFile($file_root . $file);
+    $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
 
     $body_text = $dom->getElementsByTagName('body')->item(0)->$textContent;
 
