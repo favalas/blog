@@ -37,7 +37,7 @@
 
               let htmlList = "";
               for (const document of inverted_index_json[searchTerm]) {
-                htmlList += document + "<br/>";
+                htmlList += `<a href="${document}" target="_blank">${document}</a>` + "<br/>";
               }
               
               element.innerHTML = htmlList;
