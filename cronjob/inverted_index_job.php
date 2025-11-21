@@ -10,7 +10,7 @@ $files = array("quotes.html",
                "notesfromtheundergroundp3.html",
                "notesfromtheundergroundp4.html");
 
-$files_content_hashMap = [];
+$files_content_hashMap = array();
 
 foreach($files as $file) {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
@@ -26,7 +26,6 @@ foreach($files as $file) {
          $files_content_hashMap[$term] = 1;
       else
         $files_content_hashMap[$term]++;
-      
     }
 }
 
