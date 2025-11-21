@@ -27,7 +27,7 @@
           }
 
           if(event.code == "Enter") {
-            let searchTerm = document.getDocumentById("search_term").value;
+            let searchTerm = document.getElementById("search_term").value;
             
             if(searchTerm in inverted_index_json)
               console.log(`Documents in ${inverted_index_json[searchTerm]}`);
