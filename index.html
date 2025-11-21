@@ -21,7 +21,7 @@
               .catch(error => console.error('Error loading JSON:', error));
 
       function searchKeyPress(event) {
-          const element = document.getElementById("search_term");
+          const element = document.getElementById("searchResults");
           element.style.display = 'none';
         
           if(inverted_index_json == null) {
@@ -30,7 +30,7 @@
           }
 
           if(event.code == "Enter") {
-            const searchTerm = element.value;
+            const searchTerm = document.getElementById("search_term").value;
             
             if(searchTerm in inverted_index_json)
               element.style.display = 'block';
@@ -57,7 +57,7 @@
 
       <div id="search">
         <input id="search_term" type="text" placeholder="Search" onkeydown="searchKeyPress(event)" />
-        <p style="display: none;"></p>
+        <p id="searchResults" style="display: none;"></p>
       </div>
       
       <div class="imageContext">
