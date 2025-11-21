@@ -19,6 +19,11 @@
                   inverted_index_json = data;
               })
               .catch(error => console.error('Error loading JSON:', error));
+
+      document.getElementById("search_term").addEventListener("keydown", (event) => {
+          console.log(`Physical key code: ${event.code}`);
+      });
+      
     </script>
     
   </head>
