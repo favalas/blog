@@ -26,7 +26,8 @@ foreach($files as $file) {
       $patterns = array();
       $patterns[0] = '/\n/';
       $patterns[1] = '/\./';
-      $patterns[2] = '/;/';
+      $patterns[2] = '/\;/';
+      $patterns[3] = '/\,/';
       $term_parsed = preg_replace($patterns, "", $term);
       
       if(empty($term_parsed))
