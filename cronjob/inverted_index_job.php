@@ -17,7 +17,7 @@ foreach($files as $file) {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
 }
 catch(Exception $e) {
-  echo 'Message: ' .$e->getMessage();
+  echo 'Message: ' . $e->getMessage();
   exit();
 }
   
