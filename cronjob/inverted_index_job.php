@@ -42,6 +42,10 @@ foreach($files as $file) {
 
 $json_content = json_encode($files_content_hashMap, JSON_PRETTY_PRINT);
 
-echo $json_content;
+$filename = "inverted_index.json";
+
+file_put_contents($filename, $json_content);
+
+echo "Inverted index created and saved at: " . $filename;
 
 ?>
