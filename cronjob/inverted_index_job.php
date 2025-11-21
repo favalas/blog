@@ -15,13 +15,13 @@ $total_files_content = "";
 foreach($files as $file) {
     $dom = HTMLDocument::createFromFile(realpath($file_root . $file));
   
-    $body_text = $dom->getElementsByTagName('body')->item(0)->$textContent;
+    $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
     echo "texto do body: " . $body_text;
   
     $total_files_content .= $body_text;
 }
 
-echo $body_text;
+echo $total_files_content;
 
 ?>
