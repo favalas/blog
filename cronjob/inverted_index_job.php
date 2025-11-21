@@ -53,6 +53,6 @@ $filename = "inverted_index.json";
 
 file_put_contents($filename, $json_content);
 
-echo "Inverted index created and saved at: " . $filename;
+echo "Inverted index created and saved.";
 
 ?>
