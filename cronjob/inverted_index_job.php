@@ -19,6 +19,8 @@ foreach($files as $file) {
 
     foreach(explode(" ", $body_text) as $term) {
 
+      echo $term;
+      
       if(array_key_exists($term, $files_content_hashMap)
          $files_content_hashMap[$term] = 1;
       else
