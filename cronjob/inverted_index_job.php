@@ -19,7 +19,7 @@ foreach($files as $file) {
 
     try {
       $body_terms = explode(" ", $body_text);
-    } (\Exception $e) {
+    } (\Throwable $e) {
       echo $e->getMessage();
     }
 
