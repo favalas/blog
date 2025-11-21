@@ -9,6 +9,18 @@
     <title>Blog</title>
     
     <link href="style/main.css" rel="stylesheet">
+
+    <script>
+      var inverted_index_json = null;
+      
+      fetch('cronjob/inverted_index.json')
+              .then(response => response.json())
+              .then(data => {
+                  inverted_index_json = data;
+              })
+              .catch(error => console.error('Error loading JSON:', error));
+    </script>
+    
   </head>
 
   <body>
