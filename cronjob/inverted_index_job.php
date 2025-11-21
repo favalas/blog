@@ -17,10 +17,11 @@ foreach($files as $file) {
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    foreach(explode(" ", $body_text) as $term) {
+    $body_terms = explode(" ", $body_text);
 
-      echo $term;
-      
+    var_dump($body_terms);
+  
+    foreach($body_term as $term) {
       if(array_key_exists($term, $files_content_hashMap)
          $files_content_hashMap[$term] = 1;
       else
