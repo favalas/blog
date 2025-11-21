@@ -13,10 +13,10 @@ $files = array("quotes.html",
 $total_files_content = "";
 
 foreach($files as $file) {
+    echo $file_root . $file;
+  
     $dom = HTMLDocument::createFromFile($file_root . $file);
 
-    echo "file loaded";
-  
     $body_text = $dom->getElementsByTagName('body')->item(0)->$textContent;
 
     $total_files_content .= $body_text;
