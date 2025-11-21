@@ -20,7 +20,7 @@
               })
               .catch(error => console.error('Error loading JSON:', error));
 
-      document.getElementById("search_term").addEventListener("keydown", (event) => {
+      function searchKeyPress(event) {
           console.log(`Physical key code: ${event.code}`);
       });
       
@@ -42,7 +42,7 @@
       </ul>
 
       <div id="search">
-        <input id="search_term" type="text" placeholder="Search" />
+        <input id="search_term" type="text" placeholder="Search" onkeydown="searchKeyPress(event)" />
       </div>
       
       <div class="imageContext">
