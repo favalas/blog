@@ -21,16 +21,20 @@
               .catch(error => console.error('Error loading JSON:', error));
 
       function searchKeyPress(event) {
+          const element = document.getElementById("search_term");
+          element.style.display = 'none';
+        
           if(inverted_index_json == null) {
             console.log("Json data with inverted index was not loaded yet");
             return;
           }
 
           if(event.code == "Enter") {
-            let searchTerm = document.getElementById("search_term").value;
+            const searchTerm = element.value;
             
             if(searchTerm in inverted_index_json)
-              console.log(`Documents in ${inverted_index_json[searchTerm]}`);
+              element.style.display = 'block';
+              element.innerText = inverted_index_json[searchTerm];
           }
       };
       
