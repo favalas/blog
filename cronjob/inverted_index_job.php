@@ -29,6 +29,8 @@ foreach($files as $file) {
     }
 }
 
-var_dump($files_content_hashMap);
+$json_content = json_encode($files_content_hashMap);
+
+echo $json_content;
 
 ?>
