@@ -34,7 +34,7 @@
             
             if(searchTerm in inverted_index_json)
               element.style.display = 'block';
-              element.innerText = inverted_index_json[searchTerm];
+              element.innerHtml = inverted_index_json[searchTerm];
           }
       };
       
@@ -57,7 +57,7 @@
 
       <div id="search">
         <input id="search_term" type="text" placeholder="Search" onkeydown="searchKeyPress(event)" />
-        <p id="searchResults" style="display: none;"></p>
+        <div id="searchResults" style="display: none;"></div>
       </div>
       
       <div class="imageContext">
