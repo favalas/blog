@@ -17,13 +17,7 @@ foreach($files as $file) {
   
     $body_text = $dom->getElementsByTagName('body')->item(0)->textContent;
 
-    echo "ola";
-    try {
-      $body_terms = explode(" ", $body_text);
-    } (\Throwable $e) {
-      echo $e->getMessage();
-    }
-    echo "ola 2";
+    $body_terms = explode(" ", $body_text);
 
     var_dump($body_terms);
   
