@@ -22,12 +22,15 @@
 
       function searchKeyPress(event) {
           if(inverted_index_json == null) {
-            console.error("Json data with inverted index was not loaded yet");
+            console.log("Json data with inverted index was not loaded yet");
             return;
           }
 
           if(event.code == "Enter") {
-            console.log(`Physical key code: ${event.code}`);
+            let searchTerm = document.getDocumentById("search_term").value;
+            
+            if(searchTerm in inverted_index_json)
+              console.log(`Documents in ${inverted_index_json[searchTerm]}`);
           }
       };
       
