@@ -12,6 +12,8 @@ $files = array("quotes.html",
 
 $total_files_content = "";
 
+echo "ola";
+
 foreach($files as $file) {
     $dom = HTMLDocument::createFromFile($file_root . $file);
 
