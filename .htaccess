@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteRule ^notes/1/$ notesfromtheundergroundp1.html
-RewriteRule ^notes/2/$ notesfromtheundergroundp2.html
-RewriteRule ^notes/3/$ notesfromtheundergroundp3.html
-</IfModule>
