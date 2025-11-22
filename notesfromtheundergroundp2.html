@@ -9,11 +9,18 @@
     <title>Notes from the Underground - II</title>
     
     <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
 
   <body>
     <section class="main">
-      <h1>Notes From The Underground - II</h1>
+
+      <header>
+        <button class="bottomButton" type="button" onclick="JumpToEndOfPage()">Bottom &#8595;</button>
+
+        <h1>Notes From The Underground - II</h1>
+      </header>
+      
       <p>
           In 1913, Vienna played host to Adolf Hitler, Leon Trotsky, Joseph Tito, Sigmund Freud and Joseph Stalin. 
           It was a disparate group. The two revolutionaries, Stalin and Trotsky, were on the run. Sigmund Freud was already well established. 
@@ -602,14 +609,19 @@
           </span>
           American Progress (1872), John Gast
       </p>
+      
       <footer>
         <span class="totalCounterParagraphs">Total Notes: </span>
+        
         <div class="pagination">
           <a href="notesfromtheundergroundp1.html">&lt;&lt; Notes from the Underground - I</a>
           <span class="separator">&#9679;</span>
           <a href="notesfromtheundergroundp3.html">Notes from the Underground - III &gt;&gt;</a>
         </div>
+
+        <button class="topButton" type="button" onclick="JumpToTopOfPage()">Top &#8593;</button>
       </footer>
+      
     </section>
   </body>
 </html>
