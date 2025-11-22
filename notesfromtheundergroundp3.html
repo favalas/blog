@@ -9,11 +9,18 @@
     <title>Notes from the Underground - III</title>
     
     <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
 
   <body>
     <section class="main">
-      <h1>Notes From The Underground - III</h1>
+
+      <header>
+        <button class="bottomButton" type="button" onclick="JumpToEndOfPage()">Bottom &#8595;</button>
+
+        <h1>Notes From The Underground - III</h1>
+      </header>
+      
       <p>
           No intervalo de meio segundo que decorre entre ouvirmos uma expressão até ao instante em que compreendemos o seu significado, o nosso cérebro divide as tarefas a realizar em quatro grandes etapas, iniciadas em locais distintos e que apesar de serem em grande parte temporalmente sequenciais, por vezes sobrepõem-se umas às outras e retroalimentam-se. 
           Estas quatro etapas corresponderem às quatro grandes disciplinas em que se divide o estudo da linguagem desde os tempos de Aristóteles: a fonologia (estudo dos sons da língua), a sintaxe (estudo das relações entre as palavras), a semântica (estudo do significado das palavras) e a pragmática (estudo da influência do contexto na linguagem). 
@@ -601,14 +608,19 @@
             <a href="imgs/Powers_of_Ten.jpg" target="_blank"><img src="imgs/Powers_of_Ten.jpg" /></a>
           </span>
       </p>
+      
       <footer>
         <span class="totalCounterParagraphs">Total Notes: </span>
+        
         <div class="pagination">
           <a href="notesfromtheundergroundp2.html">&lt;&lt; Notes from the Underground - II</a>
           <span class="separator">&#9679;</span>
           <a href="notesfromtheundergroundp4.html">Notes from the Underground - IV &gt;&gt;</a>
         </div>
+
+        <button class="topButton" type="button" onclick="JumpToTopOfPage()">Top &#8593;</button>
       </footer>
+      
     </section>
   </body>
 </html>
