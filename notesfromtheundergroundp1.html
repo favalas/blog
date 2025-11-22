@@ -9,11 +9,18 @@
     <title>Notes from the Underground - I</title>
     
     <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
 
   <body>
     <section class="main">
-      <h1>Notes From The Underground - I</h1>
+
+      <header>
+        <button class="bottomButton" type="button" onclick="JumpToEndOfPage()">Bottom &#8595;</button>
+
+        <h1>Notes From The Underground - I</h1>
+      </header>
+      
       <p>
           Liberal candidate Nell Thomas, a family physician running for office in the riding of Haliburton—Kawartha Lakes (Canada), posted a video in which she said that “negative messages” on social media had been circulating about comments she made in the past that were “taken out of context.”
           Contacted by National Post, Thomas’s team did not immediately clarify which of her comments she was referring to, nor did she or her campaign specify which ones had been taken out of context.
@@ -607,11 +614,14 @@
       </p>
       <footer>
         <span class="totalCounterParagraphs">Total Notes: </span>
+        
         <div class="pagination">
           <a href="./">&lt;&lt; Home</a>
           <span class="separator">&#9679;</span>
           <a href="notesfromtheundergroundp2.html">Notes from the Underground - II &gt;&gt;</a>
         </div>
+
+        <button class="topButton" type="button" onclick="JumpToTopOfPage()">Top &#8593;</button>
       </footer>
     </section>
   </body>
