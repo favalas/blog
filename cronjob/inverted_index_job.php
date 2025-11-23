@@ -33,16 +33,19 @@ foreach($files as $file) {
                  '/\)/', 
                  '/\[/', 
                  '/\]/',
+                 '/\’s]/',
                  '/\”/');
       $term_parsed = preg_replace($patterns, "", $term);
       
       if(empty($term_parsed))
         continue;
+
+      $term_parsed_lowercase = mb_strtolower($term_parsed, 'UTF-8');
       
-      if (!array_key_exists($term_parsed, $files_content_hashMap)) {
-          $files_content_hashMap[$term_parsed] = array($file);
-      } else if (!in_array($file, $files_content_hashMap[$term_parsed])) {
-          array_push($files_content_hashMap[$term_parsed], $file);
+      if (!array_key_exists($term_parsed_lowercase, $files_content_hashMap)) {
+          $files_content_hashMap[$term_parsed_lowercase] = array($file);
+      } else if (!in_array($file, $files_content_hashMap[$term_parsed_lowercase])) {
+          array_push($files_content_hashMap[$term_parsed_lowercase], $file);
       }
     }
 }
