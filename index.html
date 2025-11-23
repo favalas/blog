@@ -22,6 +22,7 @@
 
       function searchKeyPress(event) {
           const element = document.getElementById("searchResults");
+          element.innerHTML = "";
           element.style.display = 'none';
         
           if(inverted_index_json == null) {
@@ -37,18 +38,23 @@
                                 .value
                                 .toLowerCase();
 
-            if(inverted_index_json[searchTerm])
-              element.style.display = 'block';
-
-              let htmlList = "";
-              for (const document of inverted_index_json[searchTerm]) {
-                htmlList += `<a href="${document}" target="_blank">${document}</a>` + "<br/>";
-              }
-
-              if(!htmlList)
-                htmlList = "No results";
+            element.style.display = 'block';
+            
+            if(inverted_index_json[searchTerm]) {
               
-              element.innerHTML = htmlList;
+                let htmlList = "";
+                for (const document of inverted_index_json[searchTerm]) {
+                  htmlList += `<a href="${document}" target="_blank">${document}</a>` + "<br/>";
+                }
+  
+                if(!htmlList)
+                  htmlList = "No results in documents";
+                
+                element.innerHTML = htmlList;
+              
+              } else {
+                element.innerHTML = "No results";
+              }
           }
       };
       
