@@ -37,7 +37,7 @@
                                 .value
                                 .toLowerCase();
 
-            if(searchTerm in inverted_index_json)
+            if(inverted_index_json[searchTerm])
               element.style.display = 'block';
 
               let htmlList = "";
