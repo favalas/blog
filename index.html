@@ -32,8 +32,11 @@
           if(event.code == "Enter"
              || event.keyCode == "13") //In mobile there is no Enter but Go
           {
-            const searchTerm = document.getElementById("search_term").value;
-            
+            const searchTerm = document
+                                .getElementById("search_term")
+                                .value
+                                toLowerCase();
+
             if(searchTerm in inverted_index_json)
               element.style.display = 'block';
 
@@ -41,6 +44,9 @@
               for (const document of inverted_index_json[searchTerm]) {
                 htmlList += `<a href="${document}" target="_blank">${document}</a>` + "<br/>";
               }
+
+              if(!htmlList)
+                htmlList = "No results";
               
               element.innerHTML = htmlList;
           }
