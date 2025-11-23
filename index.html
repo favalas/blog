@@ -35,7 +35,7 @@
             const searchTerm = document
                                 .getElementById("search_term")
                                 .value
-                                toLowerCase();
+                                .toLowerCase();
 
             if(searchTerm in inverted_index_json)
               element.style.display = 'block';
