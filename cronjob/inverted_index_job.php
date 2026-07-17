@@ -10,7 +10,8 @@ $files = array("quotes.html",
                "notesfromtheundergroundp3.html",
                "notesfromtheundergroundp4.html",
                "notesfromtheundergroundp5.html",
-               "notesfromtheundergroundp6.html");
+               "notesfromtheundergroundp6.html",
+               "notesfromtheundergroundp7.html");
 
 $files_content_hashMap = array();
 
